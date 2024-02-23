@@ -12,4 +12,16 @@
 `resulting.csv` - modified data \
 `script.py` - script used to modify data
 
+## alenaosth
+
+`data_old.csv` - initial data \
+`data_new.csv` - modified data \
+`script.py` - script used to modify data
+
+## Arni
+
+`test1.csv` - initial data \
+`test2.csv` - modified data \
+`something.py` - script used to modify data
+
 <img src="https://i.pinimg.com/564x/39/e4/88/39e488ee15bbffeeb6a368a7498f324c.jpg" width="200" alt="cat" />
