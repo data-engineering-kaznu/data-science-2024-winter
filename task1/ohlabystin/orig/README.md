@@ -1,2 +1,2 @@
-#Zhumabidenkyzy Zhuldyz
-#DS 23-02
+Zhumabidenkyzy Zhuldyz
+DS 23-02
