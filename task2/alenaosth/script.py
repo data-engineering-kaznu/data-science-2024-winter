@@ -21,7 +21,8 @@ with open('data_old2.csv') as csv_file:
     with open('data_new2.csv', 'w', newline='') as csv_file_new:
         csv_writer = csv.writer(csv_file_new)
 
-        next(csv_reader)  # Пропускаем заголовок
+        headers = next(csv_reader)
+        csv_writer.writerow(headers)
 
         for row in csv_reader:
             month_name = row[0].split('-')[1]
