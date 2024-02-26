@@ -1,7 +1,6 @@
 import csv
-from datetime import datetime
 
-dict = {
+month_dict = {
     "Jan": "01",
     "Feb": "02",
     "Mar": "03",
@@ -19,18 +18,18 @@ dict = {
 with open('data_old2.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
 
-with open('data_new2.csv', 'w', newline='') as csv_file_new:
-    csv_writer = csv.writer(csv_file_new)
+    with open('data_new2.csv', 'w', newline='') as csv_file_new:
+        csv_writer = csv.writer(csv_file_new)
 
-next(csv_reader)
+        next(csv_reader)  # Пропускаем заголовок
 
-for row in csv_reader:
+        for row in csv_reader:
+            month_name = row[0].split('-')[1]
+            month_num = month_dict.get(month_name)
 
-    month_name = row[0].split('-')[1]
+            if month_num:
+                row[0] = row[0].replace(month_name, month_num)
 
-    month_num = dict.get(month_name)
+            csv_writer.writerow(row)
 
-    if month_num:
-        row[0] = row[0].replace(month_name, month_num)
-
-csv_writer.writerow(row)
+        csv_file_new.write('\n')
