@@ -37,15 +37,3 @@ with open('data_old2.csv') as csv_file:
 
 
 
-modified_data = []
-
-with open('data_old2.csv.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    for i in csv_reader:
-        if i[0] != 'year':
-            modified_data.append([i[0]+'-01-01', i[1], i[2]])
-
-with open('data_new2.csv.csv', mode='w', newline='') as csv_file:
-    csv_writer = csv.writer(csv_file, delimiter=',')
-    for i in modified_data:
-        csv_writer.writerow(i)
