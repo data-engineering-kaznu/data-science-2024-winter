@@ -11,19 +11,19 @@
 | ---------- | ------ | ------|
 | 01-31-2020 | Almaty | 281000 |
 #### Открываем файл для чтения input.csv и файла для записи output.csv 
-\ ```python
+```python
 with open('input.csv', 'r') as input_file, open('output.csv', 'w', newline='') as output_file:
-\ ```
+```
 ##### Эта команда автоматический закрывает файлы после завершение работы
 
-\ ```python 
+```python 
 csv_reader = csv.reader(input_file)
 csv_writer = csv.writer(output_file)
-\ ```
+```
 ##### Создает обьект который читает и пишет
 
-\ ```python
+```python
 csv_writer.writerow(next(csv_reader))
-\ ```
+```
 ##### Записывает header на output
 
