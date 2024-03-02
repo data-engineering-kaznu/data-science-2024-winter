@@ -40,6 +40,7 @@ def main():
     result_of_exponentiation = exponentiation(a, b)
     print(result_of_exponentiation)
 
+    #print(substracting(adding(adding(adding(adding(5,4), multiplacation(3, exponentiation(3, 2)), division(exponentiation(3, 3), exponentiation(3,2)))), exponentiation(10,2), 8))
     return 0
 
 if __name__ == "__main__":
