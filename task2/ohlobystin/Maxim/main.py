@@ -19,7 +19,7 @@ with open('Input.csv', 'r') as input_csv, open('Output.csv', 'w') as output_csv:
     reader = csv.reader(input_csv)
     writer = csv.writer(output_csv)
     next(reader)
-    writer.writerow(['year', 'reagion', 'value'])
+    writer.writerow(['year', 'region', 'value'])
     for row in reader:
-        row[0] = row[0].split('-')[0] + '-' + months[row[0].split('-')[1]]
+        row[0] = row[0].split('-')[0] + '-' + months[row[0].split('-')[1]] +'-'+'01'
         writer.writerow(row)
