@@ -1,4 +1,4 @@
-# Checkpoint №1 
+# Checkpoint 1 
 ## Task:
 ## How date should change from yyyymmdd to dd-mm-yyyy and get total for column value(sum with group by)
 ### Source data:
